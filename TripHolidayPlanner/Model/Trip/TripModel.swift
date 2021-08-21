@@ -8,8 +8,8 @@
 import Foundation
 
 class TripModel {
-    var id: UUID
-    var title: String!
+    let id: UUID
+    var title: String
     
     init (title: String) {
         id = UUID()
