@@ -27,13 +27,11 @@ extension TripsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TripsTableViewCell") as! TripsTableViewCell
+        cell.setup(tripModel: Data.tripModels[indexPath.row])
         
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        }
+        return cell
         
-        cell?.textLabel?.text = Data.tripModels[indexPath.row].title
-        return cell!
+       
     }
 }
