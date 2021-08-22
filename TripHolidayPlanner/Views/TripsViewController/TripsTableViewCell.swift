@@ -15,9 +15,7 @@ class TripsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        cardView.layer.shadowOpacity = 1
-        cardView.layer.shadowOffset = CGSize.zero
-        cardView.layer.shadowColor = UIColor.darkGray.cgColor
+        cardView.addShadowAndRoundedCorners()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
