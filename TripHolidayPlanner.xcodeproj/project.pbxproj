@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F79E3E126D243920090DA7A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79E3E026D243920090DA7A /* UIViewExtension.swift */; };
+		1F79E3E426D259020090DA7A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79E3E326D259020090DA7A /* Theme.swift */; };
+		1F79E3E626D259200090DA7A /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F79E3E526D259200090DA7A /* FugazOne-Regular.ttf */; };
+		1F79E3E826D25BA30090DA7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F79E3E726D25BA30090DA7A /* Colors.xcassets */; };
 		1FA4ABC826D0E5D900EF0F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4ABC726D0E5D900EF0F59 /* AppDelegate.swift */; };
 		1FA4ABCA26D0E5D900EF0F59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4ABC926D0E5D900EF0F59 /* SceneDelegate.swift */; };
 		1FA4ABD126D0E5DC00EF0F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA4ABD026D0E5DC00EF0F59 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F79E3E026D243920090DA7A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		1F79E3E326D259020090DA7A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1F79E3E526D259200090DA7A /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		1F79E3E726D25BA30090DA7A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FA4ABC426D0E5D900EF0F59 /* TripHolidayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripHolidayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA4ABC726D0E5D900EF0F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA4ABC926D0E5D900EF0F59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F79E3DF26D2437A0090DA7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F79E3E026D243920090DA7A /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F79E3E226D258F70090DA7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F79E3E326D259020090DA7A /* Theme.swift */,
+				1F79E3E526D259200090DA7A /* FugazOne-Regular.ttf */,
+				1F79E3E726D25BA30090DA7A /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1FA4ABBB26D0E5D800EF0F59 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +90,8 @@
 		1FA4ABC626D0E5D900EF0F59 /* TripHolidayPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1F79E3E226D258F70090DA7A /* Resources */,
+				1F79E3DF26D2437A0090DA7A /* Extensions */,
 				1FEA00EA26D14D3E009EE634 /* Views */,
 				1FA4ABDB26D110AD00EF0F59 /* Model */,
 				1FA4ABC726D0E5D900EF0F59 /* AppDelegate.swift */,
@@ -168,8 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F79E3E826D25BA30090DA7A /* Colors.xcassets in Resources */,
 				1FA4ABD426D0E5DC00EF0F59 /* LaunchScreen.storyboard in Resources */,
 				1FEA00ED26D14DB6009EE634 /* TripsViewController.storyboard in Resources */,
+				1F79E3E626D259200090DA7A /* FugazOne-Regular.ttf in Resources */,
 				1FA4ABD126D0E5DC00EF0F59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,12 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F79E3E426D259020090DA7A /* Theme.swift in Sources */,
 				1FA4ABC826D0E5D900EF0F59 /* AppDelegate.swift in Sources */,
 				1FA4ABE226D1132800EF0F59 /* Data.swift in Sources */,
 				1FA4ABCA26D0E5D900EF0F59 /* SceneDelegate.swift in Sources */,
 				1FEA00EF26D14DCE009EE634 /* TripsViewController.swift in Sources */,
 				1FA4ABE026D110E900EF0F59 /* TripFunctions.swift in Sources */,
 				1FEA00F126D17032009EE634 /* TripsTableViewCell.swift in Sources */,
+				1F79E3E126D243920090DA7A /* UIViewExtension.swift in Sources */,
 				1FA4ABDE26D110DB00EF0F59 /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
