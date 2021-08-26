@@ -77,6 +77,9 @@
                                 <state key="normal" title="Button" image="addButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="t72-kB-6qc" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="nLI-wr-G7g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xcQ-32-mjc"/>
@@ -98,6 +101,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUy-vj-mzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-217.39130434782609" y="-6.0267857142857144"/>
+        </scene>
+        <!--AddTripViewController-->
+        <scene sceneID="scq-dK-iIF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTripViewController" id="t72-kB-6qc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CvG-PX-Yad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="-6"/>
         </scene>
     </scenes>
     <resources>
